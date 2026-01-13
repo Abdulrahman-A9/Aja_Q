@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>قيلات أجا</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="nav-header" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">landscape</span>
+                </div>
+                <h1 class="logo-text">قيلات أجا</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="#home">الرئيسية</a>
+                <a class="nav-link" href="#news">الأخبار</a>
+                <a class="nav-link" href="#fleet">القيلات</a>
+                <a class="nav-link" href="#offers">العروض</a>
+                <a class="nav-link" href="#about">التجربة</a>
+                <a class="nav-link" href="#contact">تواصل معنا</a>
+            </div>
+            <div class="nav-actions">
+                <a class="nav-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">
+                    حساب جديد
+                </button>
+            </div>
+            <button class="nav-mobile-menu" id="mobileMenuBtn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a class="mobile-menu-link" href="#home">الرئيسية</a>
+            <a class="mobile-menu-link" href="#news">الأخبار</a>
+            <a class="mobile-menu-link" href="#fleet">القيلات</a>
+            <a class="mobile-menu-link" href="#offers">العروض</a>
+            <a class="mobile-menu-link" href="#about">التجربة</a>
+            <a class="mobile-menu-link" href="#contact">تواصل معنا</a>
+            <div class="mobile-menu-actions">
+                <a class="mobile-menu-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">حساب جديد</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-image"
+                style="background-image:url('https://saudipedia.com/saudipedia/uploads/images/2023/08/12/thumbs/1100x1100/61747.jpg');">
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-card">
+                <span class="hero-badge">تجربة برية فاخرة</span>
+                <h2 class="hero-title">
+                    اكتشف جمال <br />
+                    <span class="hero-title-gradient">الطبيعة العذراء</span>
+                </h2>
+                <p class="hero-description">
+                    انطلق في مغامرة استثنائية عبر الكثبان الذهبية والوديان الساحرة. استمتع بتجربة القيادة الصحراوية مع أفخم المركبات وأحدث التجهيزات للرحلات البرية الآمنة والمريحة.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-white" onclick="document.getElementById('fleet').scrollIntoView({behavior: 'smooth'})">
+                        استكشف القيلات
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar-wrapper">
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <div class="search-field">
+                    <label class="search-label">اكتب اسم سيارة القيلة طال عمرك</label>
+                    <div class="search-input-wrapper">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                        <input class="search-input" placeholder="مثال: لاند كروزر، باترول، رابتور..." type="text" id="searchInput" />
+                    </div>
+                </div>
+               
+                <button class="search-button" onclick="performSearch()">
+                    <span class="material-symbols-outlined">search</span>
+                    <span class="search-button-text">بحث عن سيارات</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="about-section" id="about">
+            <div class="about-card">
+                <div class="about-decoration"></div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="about-badge">
+                            <span class="material-symbols-outlined">stars</span>
+                            لماذا تختارنا
+                        </div>
+                        <h2 class="about-title">خبرة في كل ذرة رمل</h2>
+                        <p class="about-description">
+                            نحن متخصصون في توفير سيارات الدفع الرباعي من الدرجة الأولى والمجهزة خصيصًا لتجربة الصحراء
+                            السعودية المثالية. السلامة والرفاهية والخبرة المحلية هي جوهر خدمتنا. أسطولنا مجهز بمعدات
+                            الملاحة والإنقاذ المتقدمة لضمان راحة بالك.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">سيارة فاخرة</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">دعم صحراوي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-images">
+                        <div class="about-images-col about-images-col-offset">
+                            <div class="about-image about-image-1"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_lTt5vgK-Asj69Qw_8jfqniZceVlyYVEMU3k4SZvg9MzYvPbO2b20lz9MjsdgTIpVSaHs1SJBoXeb2YgmPCS_gI9sJEQl1w6BaIQIQRkgOEin3w2j9uIYARWkMKEr_0WcESUw38GEqykkULWSPV3FM6UtYGQQ0iMa99_lCrfu7p5N4wZcDa_2YkGKrWFkRVwp5pcSz8DxRTmmJpmnLxXRyK-9sVO6Lw4hcBDMWHjcXi8uUgKroS2Dic5KdNlRk2e-_V33il2HyiTf');">
+                            </div>
+                            <div class="about-feature-box">
+                                <div>
+                                    <span class="material-symbols-outlined feature-icon">safety_check</span>
+                                    <h4 class="feature-title">السلامة أولاً</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-images-col">
+                            <div class="about-feature-box">
+                                <div>
+                                    <span class="material-symbols-outlined feature-icon">diamond</span>
+                                    <h4 class="feature-title">أسطول فاخر</h4>
+                                </div>
+                            </div>
+                            <div class="about-image about-image-2"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXo16-ryGH8pjCzgB7s709bGjqRt6Z28AuTXD5JhrUQAZ_-0NFL_1TeLxITOQr3yGuyze9aW_JNA2da3Wt8l9VvpfZrSL629K15lNyFph4oUvrEqRIiBZH0Al2AGthkx9Yl0LLioAa_CpNoDIKpU3QPf46MRr5UIbVt4nEY_bn5wlUxjUyoZn80JtcLuf3tSND8kWjTJh2pGGVZ4n8DlD_6LF_hS-BRdEv-IM5Gyuh-3wtXfe1Sy14ZkPF140DE3wVw7dLjAXtrLpC');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Announcements Section -->
+        <section class="news-section" id="news">
+            <div class="news-header">
+                <div class="news-header-content">
+                    <div class="news-badge">
+                        <span class="material-symbols-outlined">campaign</span>
+                        أخبار وإعلانات
+                    </div>
+                    <h2 class="news-title">آخر الأخبار والإعلانات</h2>
+                    <p class="news-subtitle">تابع أحدث الأخبار والإعلانات الخاصة بنا</p>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <!-- News Card 1 - Featured -->
+                <div class="news-card news-card-featured">
+                    <div class="news-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_lTt5vgK-Asj69Qw_8jfqniZceVlyYVEMU3k4SZvg9MzYvPbO2b20lz9MjsdgTIpVSaHs1SJBoXeb2YgmPCS_gI9sJEQl1w6BaIQIQRkgOEin3w2j9uIYARWkMKEr_0WcESUw38GEqykkULWSPV3FM6UtYGQQ0iMa99_lCrfu7p5N4wZcDa_2YkGKrWFkRVwp5pcSz8DxRTmmJpmnLxXRyK-9sVO6Lw4hcBDMWHjcXi8uUgKroS2Dic5KdNlRk2e-_V33il2HyiTf');"></div>
+                    <div class="news-content">
+                        <div class="news-tag news-tag-important">مهم</div>
+                        <div class="news-date">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            13 يناير 2026
+                        </div>
+                        <h3 class="news-title-card">إطلاق باقات صيفية حصرية</h3>
+                        <p class="news-description">استمتع بعروض صيفية مميزة على جميع رحلاتنا الصحراوية مع خصومات تصل إلى 30%</p>
+                        <button class="btn-news-read">اقرأ المزيد</button>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJ51zwvNZ20bGzJ_qQLb8tWlV0cffRfdiviE9OiRh2thFDUtyMJEtvmMRDHR3MBGkSDGvej_4j8ADp5Foaf6iex1GUBlsRSH4wqcVKUhQnKh3O6IXjdU8d28BXhShio3S-nTgx_qV-LY7ZS9_6X2BR2qKDaH1lcFF3ACkliHWGlzSm3J2-XMTsUkPk3KW8YjTLRi55Nj4spSyiIZDMZkO0nn7Q5grw1ao4gBLFOadQKPH8KbYm88hNRE--vO7yttZY8jWMo_hIdPuj');"></div>
+                    <div class="news-content">
+                        <div class="news-tag news-tag-update">تحديث</div>
+                        <div class="news-date">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            10 يناير 2026
+                        </div>
+                        <h3 class="news-title-card">إضافة سيارات جديدة للأسطول</h3>
+                        <p class="news-description">مرحباً بأحدث إضافة إلى أسطولنا - سيارات فاخرة من الطراز الأول توفر أفضل تجربة</p>
+                        <button class="btn-news-read">اقرأ المزيد</button>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4x_4MbVIjoM2dBRHpMIQRcx8ytbMxoioASsz3xOybUIQEojstwjpF69SUJ3oj6w5UArRgJHi_zkhEUlmKNgXdraNzGXrcePNnLxg9cnnmjk3OiATIGGydXSRUlIwLhEw4eVfEiXjLjaySvGKz8djaJks_ZSze6l1eHsZw9nHtvyQhnO4Ev9EJAqqCREzHhqQDp18Pw6MXMCReVpk3yXTLqL0poa-aq6LhT3KwVFQPHyQHKjpeX7oIopWtc5hoYQ7anBdR8I8VJcQv');"></div>
+                    <div class="news-content">
+                        <div class="news-tag news-tag-event">حدث</div>
+                        <div class="news-date">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            5 يناير 2026
+                        </div>
+                        <h3 class="news-title-card">رحلة المغامرة الكبرى بدأت بنجاح</h3>
+                        <p class="news-description">رحلة المغامرة الكبرى انطلقت بنجاح مع أكثر من 100 مشارك من جميع أنحاء المملكة</p>
+                        <button class="btn-news-read">اقرأ المزيد</button>
+                    </div>
+                </div>
+
+                <!-- News Card 4 -->
+                <div class="news-card">
+                    <div class="news-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD26B8bBy20hOWY7LSGlwCYP99xmXGxnznpMIlufw2FZECX2S14YY5MGMUrDZhU9t2vdt4h1ME_Zgt8o-aT853LaczuZsvd7rWHFpidX1Hxm80vfWgdHChFi5Bxh4-IKDcAHMz7X7Pi68RGxinCiT-UT43JLw7g8s-cmRx1Sl0tFn7x7jmf6BsF4ppfpq1686xsp46dJI7XfiHNvYTpX0a-pJbhZ9aapa_agMnAhHpW6YknTkwp9bLrngobuAVB_OT2d-W-yn6igVXs');"></div>
+                    <div class="news-content">
+                        <div class="news-tag news-tag-offer">عرض</div>
+                        <div class="news-date">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            1 يناير 2026
+                        </div>
+                        <h3 class="news-title-card">احتفالات نهاية العام مع خصومات قياسية</h3>
+                        <p class="news-description">احتفل معنا بنهاية العام بخصومات قياسية على جميع الرحلات والباقات</p>
+                        <button class="btn-news-read">اقرأ المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers & Promotions Section -->
+        <section class="offers-section" id="offers">
+            <div class="offers-header">
+                <div class="offers-header-content">
+                    <div class="offers-badge">
+                        <span class="material-symbols-outlined">local_offer</span>
+                        عروض حصرية
+                    </div>
+                    <h2 class="offers-title">أحدث الإعلانات والعروض</h2>
+                    <p class="offers-subtitle">استفد من عروضنا الموسمية وباقاتنا المميزة لتجربة صحراوية لا تُنسى</p>
+                </div>
+            </div>
+
+            <div class="offers-grid">
+                <!-- Offer 1 - Featured -->
+                <div class="offer-card offer-card-featured">
+                    <div class="offer-badge-ribbon">عرض مميز</div>
+                    <div class="offer-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJ51zwvNZ20bGzJ_qQLb8tWlV0cffRfdiviE9OiRh2thFDUtyMJEtvmMRDHR3MBGkSDGvej_4j8ADp5Foaf6iex1GUBlsRSH4wqcVKUhQnKh3O6IXjdU8d28BXhShio3S-nTgx_qV-LY7ZS9_6X2BR2qKDaH1lcFF3ACkliHWGlzSm3J2-XMTsUkPk3KW8YjTLRi55Nj4spSyiIZDMZkO0nn7Q5grw1ao4gBLFOadQKPH8KbYm88hNRE--vO7yttZY8jWMo_hIdPuj');"></div>
+                    <div class="offer-content">
+                        <div class="offer-discount">
+                            <span class="offer-discount-number">25%</span>
+                            <span class="offer-discount-text">خصم</span>
+                        </div>
+                        <h3 class="offer-title">باقة نهاية الأسبوع الصحراوية</h3>
+                        <p class="offer-description">استأجر لاند كروزر لمدة 3 أيام واحصل على خصم 25% + معدات تخييم مجانية</p>
+                        <div class="offer-features">
+                            <div class="offer-feature">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                <span>تأمين شامل</span>
+                            </div>
+                            <div class="offer-feature">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                <span>خدمة توصيل مجانية</span>
+                            </div>
+                            <div class="offer-feature">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                <span>دعم فني 24/7</span>
+                            </div>
+                        </div>
+                        <div class="offer-footer">
+                            <div class="offer-price">
+                                <span class="offer-price-old">950 ر.س</span>
+                                <span class="offer-price-new">712 ر.س</span>
+                                <span class="offer-price-period">/ يوم</span>
+                            </div>
+                            <button class="btn-offer">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card">
+                    <div class="offer-timer">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <span>ينتهي خلال 5 أيام</span>
+                    </div>
+                    <div class="offer-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPXpkwgGv4EHXJ6rnZXTzTAHemjL5LfVUAQzXJ6BoCALEJxIbz5rqd72-lY7c0RtEtSu73U3Km3TnyrThoX4kDWZaFai7LApzauH4rbESJlP3hU-oj4236in_Uc04l5ue_Ipr3VsE4QHp9GOiGaxPUiPKMU3YocXVxvtJywm2hYwxDV0NkK9oPXW4FcNYf5sSDbb6-dpHdEqNj9nUISIoFlSc6F_-9wnqIl_oYrsrJ2EWLCvQuGyiOUrg3ZdAtOVgrDqo7H5rPUQG0');"></div>
+                    <div class="offer-content">
+                        <div class="offer-discount offer-discount-small">
+                            <span class="offer-discount-number">15%</span>
+                            <span class="offer-discount-text">خصم</span>
+                        </div>
+                        <h3 class="offer-title">عرض رابتور الخاص</h3>
+                        <p class="offer-description">تجربة القيادة الأقوى مع فورد رابتور بسعر مخفض</p>
+                        <div class="offer-footer">
+                            <div class="offer-price">
+                                <span class="offer-price-old">1100 ر.س</span>
+                                <span class="offer-price-new">935 ر.س</span>
+                                <span class="offer-price-period">/ يوم</span>
+                            </div>
+                            <button class="btn-offer-secondary">التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-badge-new">جديد</div>
+                    <div class="offer-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4x_4MbVIjoM2dBRHpMIQRcx8ytbMxoioASsz3xOybUIQEojstwjpF69SUJ3oj6w5UArRgJHi_zkhEUlmKNgXdraNzGXrcePNnLxg9cnnmjk3OiATIGGydXSRUlIwLhEw4eVfEiXjLjaySvGKz8djaJks_ZSze6l1eHsZw9nHtvyQhnO4Ev9EJAqqCREzHhqQDp18Pw6MXMCReVpk3yXTLqL0poa-aq6LhT3KwVFQPHyQHKjpeX7oIopWtc5hoYQ7anBdR8I8VJcQv');"></div>
+                    <div class="offer-content">
+                        <div class="offer-discount offer-discount-small">
+                            <span class="offer-discount-number">20%</span>
+                            <span class="offer-discount-text">خصم</span>
+                        </div>
+                        <h3 class="offer-title">باقة ديفندر الفاخرة</h3>
+                        <p class="offer-description">استمتع بالرفاهية البريطانية في قلب الصحراء</p>
+                        <div class="offer-footer">
+                            <div class="offer-price">
+                                <span class="offer-price-old">1200 ر.س</span>
+                                <span class="offer-price-new">960 ر.س</span>
+                                <span class="offer-price-period">/ يوم</span>
+                            </div>
+                            <button class="btn-offer-secondary">التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offer 4 - Package Deal -->
+                <div class="offer-card offer-card-package">
+                    <div class="offer-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD26B8bBy20hOWY7LSGlwCYP99xmXGxnznpMIlufw2FZECX2S14YY5MGMUrDZhU9t2vdt4h1ME_Zgt8o-aT853LaczuZsvd7rWHFpidX1Hxm80vfWgdHChFi5Bxh4-IKDcAHMz7X7Pi68RGxinCiT-UT43JLw7g8s-cmRx1Sl0tFn7x7jmf6BsF4ppfpq1686xsp46dJI7XfiHNvYTpX0a-pJbhZ9aapa_agMnAhHpW6YknTkwp9bLrngobuAVB_OT2d-W-yn6igVXs');"></div>
+                    <div class="offer-content">
+                        <div class="offer-package-badge">
+                            <span class="material-symbols-outlined">card_giftcard</span>
+                            باقة شاملة
+                        </div>
+                        <h3 class="offer-title">رحلة العائلة الصحراوية</h3>
+                        <p class="offer-description">باترول + سائق محترف + وجبات + خيمة فاخرة</p>
+                        <div class="offer-footer">
+                            <div class="offer-price">
+                                <span class="offer-price-new">2500 ر.س</span>
+                                <span class="offer-price-period">/ الباقة</span>
+                            </div>
+                            <button class="btn-offer-secondary">اكتشف المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="offers-cta">
+                <div class="offers-cta-content">
+                    <span class="material-symbols-outlined offers-cta-icon">notifications_active</span>
+                    <div class="offers-cta-text">
+                        <h3>اشترك في نشرتنا البريدية</h3>
+                        <p>احصل على إشعارات فورية بأحدث العروض والخصومات الحصرية</p>
+                    </div>
+                    <button class="btn-cta">اشترك الآن</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers & Packages Section -->
+        <section class="special-offers-section" id="packages">
+            <div class="offers-container">
+                <div class="offers-header-new">
+                    <span class="offers-badge">
+                        <span class="material-symbols-outlined">card_giftcard</span>
+                        عروض خاصة
+                    </span>
+                    <h2 class="offers-main-title">باقات وعروض فاخرة</h2>
+                    <p class="offers-main-subtitle">اختر من مجموعتنا المميزة من الباقات المصممة خصيصاً لتجربتك</p>
+                </div>
+
+                <div class="offers-carousel-container">
+                    <button class="carousel-arrow carousel-arrow-left" id="offersArrowLeft">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+
+                    <div class="offers-slider" id="offersSlider">
+                        <!-- Offer 1 -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ51zwvNZ20bGzJ_qQLb8tWlV0cffRfdiviE9OiRh2thFDUtyMJEtvmMRDHR3MBGkSDGvej_4j8ADp5Foaf6iex1GUBlsRSH4wqcVKUhQnKh3O6IXjdU8d28BXhShio3S-nTgx_qV-LY7ZS9_6X2BR2qKDaH1lcFF3ACkliHWGlzSm3J2-XMTsUkPk3KW8YjTLRi55Nj4spSyiIZDMZkO0nn7Q5grw1ao4gBLFOadQKPH8KbYm88hNRE--vO7yttZY8jWMo_hIdPuj" alt="رحلة نهاية الأسبوع"/>
+                                <span class="offer-badge-hot">أكثر شهرة</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">رحلة نهاية الأسبوع</h3>
+                                <p class="offer-description">ثلاثة أيام من الاستكشاف والمغامرة مع سيارة فاخرة</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>سيارة 4WD فاخرة</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>تأمين شامل</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>دعم 24/7</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">2,150</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 2 -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPXpkwgGv4EHXJ6rnZXTzTAHemjL5LfVUAQzXJ6BoCALEJxIbz5rqd72-lY7c0RtEtSu73U3Km3TnyrThoX4kDWZaFai7LApzauH4rbESJlP3hU-oj4236in_Uc04l5ue_Ipr3VsE4QHp9GOiGaxPUiPKMU3YocXVxvtJywm2hYwxDV0NkK9oPXW4FcNYf5sSDbb6-dpHdEqNj9nUISIoFlSc6F_-9wnqIl_oYrsrJ2EWLCvQuGyiOUrg3ZdAtOVgrDqo7H5rPUQG0" alt="باقة المدير الشهرية"/>
+                                <span class="offer-badge-discount">توفير 30%</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">باقة المدير الشهرية</h3>
+                                <p class="offer-description">عقد شهري مع خصم استثنائي وخدمات إضافية</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>سيارات متعددة</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>صيانة مجانية</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>توصيل مجاني</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">8,900</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 3 -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4x_4MbVIjoM2dBRHpMIQRcx8ytbMxoioASsz3xOybUIQEojstwjpF69SUJ3oj6w5UArRgJHi_zkhEUlmKNgXdraNzGXrcePNnLxg9cnnmjk3OiATIGGydXSRUlIwLhEw4eVfEiXjLjaySvGKz8djaJks_ZSze6l1eHsZw9nHtvyQhnO4Ev9EJAqqCREzHhqQDp18Pw6MXMCReVpk3yXTLqL0poa-aq6LhT3KwVFQPHyQHKjpeX7oIopWtc5hoYQ7anBdR8I8VJcQv" alt="تجربة الفخامة"/>
+                                <span class="offer-badge-premium">فاخر</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">تجربة الفخامة</h3>
+                                <p class="offer-description">رحلة مخصصة مع سائق ومرافق صحراوي خبير</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>سائق متخصص</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>طعام وشراب</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>معدات تخييم</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">5,500</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 4 -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD26B8bBy20hOWY7LSGlwCYP99xmXGxnznpMIlufw2FZECX2S14YY5MGMUrDZhU9t2vdt4h1ME_Zgt8o-aT853LaczuZsvd7rWHFpidX1Hxm80vfWgdHChFi5Bxh4-IKDcAHMz7X7Pi68RGxinCiT-UT43JLw7g8s-cmRx1Sl0tFn7x7jmf6BsF4ppfpq1686xsp46dJI7XfiHNvYTpX0a-pJbhZ9aapa_agMnAhHpW6YknTkwp9bLrngobuAVB_OT2d-W-yn6igVXs" alt="فعاليات الشركات"/>
+                                <span class="offer-badge-special">مخصص</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">فعاليات الشركات</h3>
+                                <p class="offer-description">باقة متكاملة لفعالياتك مع أسطول فاخر</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>أسطول كامل</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>تنسيق شامل</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>عروض خاصة</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">حسب الطلب</span>
+                                        <span class="price-unit"></span>
+                                    </div>
+                                    <button class="btn-explore">تواصل معنا</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 5 -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_lTt5vgK-Asj69Qw_8jfqniZceVlyYVEMU3k4SZvg9MzYvPbO2b20lz9MjsdgTIpVSaHs1SJBoXeb2YgmPCS_gI9sJEQl1w6BaIQIQRkgOEin3w2j9uIYARWkMKEr_0WcESUw38GEqykkULWSPV3FM6UtYGQQ0iMa99_lCrfu7p5N4wZcDa_2YkGKrWFkRVwp5pcSz8DxRTmmJpmnLxXRyK-9sVO6Lw4hcBDMWHjcXi8uUgKroS2Dic5KdNlRk2e-_V33il2HyiTf" alt="مغامرة عائلية"/>
+                                <span class="offer-badge-hot">عائلي</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">مغامرة عائلية</h3>
+                                <p class="offer-description">رحلة آمنة وممتعة للعائلة بأكملها</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>مقاعد آمنة</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>معدات تخييم</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>وجبات عائلية</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">3,200</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 6 - رحلة المغامرين -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPXpkwgGv4EHXJ6rnZXTzTAHemjL5LfVUAQzXJ6BoCALEJxIbz5rqd72-lY7c0RtEtSu73U3Km3TnyrThoX4kDWZaFai7LApzauH4rbESJlP3hU-oj4236in_Uc04l5ue_Ipr3VsE4QHp9GOiGaxPUiPKMU3YocXVxvtJywm2hYwxDV0NkK9oPXW4FcNYf5sSDbb6-dpHdEqNj9nUISIoFlSc6F_-9wnqIl_oYrsrJ2EWLCvQuGyiOUrg3ZdAtOVgrDqo7H5rPUQG0" alt="رحلة المغامرين"/>
+                                <span class="offer-badge-adventure">مغامرة</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">رحلة المغامرين الإثارة</h3>
+                                <p class="offer-description">رحلة مثيرة للبحث عن الإثارة والتشويق في الصحراء</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>دعم شامل 24/7</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>معدات أمان متقدمة</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>مرافق متخصص</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">4,800</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 7 - باقة الرومانسية -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4x_4MbVIjoM2dBRHpMIQRcx8ytbMxoioASsz3xOybUIQEojstwjpF69SUJ3oj6w5UArRgJHi_zkhEUlmKNgXdraNzGXrcePNnLxg9cnnmjk3OiATIGGydXSRUlIwLhEw4eVfEiXjLjaySvGKz8djaJks_ZSze6l1eHsZw9nHtvyQhnO4Ev9EJAqqCREzHhqQDp18Pw6MXMCReVpk3yXTLqL0poa-aq6LhT3KwVFQPHyQHKjpeX7oIopWtc5hoYQ7anBdR8I8VJcQv" alt="باقة الرومانسية"/>
+                                <span class="offer-badge-romantic">رومانسي</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">باقة الرومانسية الصحراوية</h3>
+                                <p class="offer-description">رحلة رومانسية تحت النجوم مع خدمات فاخرة</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>عشاء رومانسي</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>موسيقى حية</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>خيمة مزينة</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">6,500</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">احجز الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 8 - باقة المصورين -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD26B8bBy20hOWY7LSGlwCYP99xmXGxnznpMIlufw2FZECX2S14YY5MGMUrDZhU9t2vdt4h1ME_Zgt8o-aT853LaczuZsvd7rWHFpidX1Hxm80vfWgdHChFi5Bxh4-IKDcAHMz7X7Pi68RGxinCiT-UT43JLw7g8s-cmRx1Sl0tFn7x7jmf6BsF4ppfpq1686xsp46dJI7XfiHNvYTpX0a-pJbhZ9aapa_agMnAhHpW6YknTkwp9bLrngobuAVB_OT2d-W-yn6igVXs" alt="باقة المصورين"/>
+                                <span class="offer-badge-photography">تصوير</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">باقة مصورين ومبدعين</h3>
+                                <p class="offer-description">رحلة متخصصة لالتقاط أجمل لحظات الصحراء</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>مواقع تصوير مميزة</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>مرشد تصوير خبير</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>وقت مرن</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">5,200</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer 9 - باقة الأصدقاء -->
+                        <div class="offer-item">
+                            <div class="offer-image-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_lTt5vgK-Asj69Qw_8jfqniZceVlyYVEMU3k4SZvg9MzYvPbO2b20lz9MjsdgTIpVSaHs1SJBoXeb2YgmPCS_gI9sJEQl1w6BaIQIQRkgOEin3w2j9uIYARWkMKEr_0WcESUw38GEqykkULWSPV3FM6UtYGQQ0iMa99_lCrfu7p5N4wZcDa_2YkGKrWFkRVwp5pcSz8DxRTmmJpmnLxXRyK-9sVO6Lw4hcBDMWHjcXi8uUgKroS2Dic5KdNlRk2e-_V33il2HyiTf" alt="باقة الأصدقاء"/>
+                                <span class="offer-badge-group">مجموعة</span>
+                            </div>
+                            <div class="offer-details">
+                                <h3 class="offer-title">باقة الأصدقاء والمجموعات</h3>
+                                <p class="offer-description">رحلة مميزة للأصدقاء مع خصومات جماعية</p>
+                                <div class="offer-features">
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>خصم 15% للمجموعات</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>تنظيم شامل</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <span>أنشطة جماعية</span>
+                                    </div>
+                                </div>
+                                <div class="offer-footer-new">
+                                    <div class="price-tag">
+                                        <span class="price-value">7,500</span>
+                                        <span class="price-unit">ر.س</span>
+                                    </div>
+                                    <button class="btn-explore">اكتشف الآن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow carousel-arrow-right" id="offersArrowRight">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators" id="offersIndicators">
+                    <button class="indicator active" data-index="0"></button>
+                    <button class="indicator" data-index="1"></button>
+                    <button class="indicator" data-index="2"></button>
+                    <button class="indicator" data-index="3"></button>
+                    <button class="indicator" data-index="4"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="fleet-section" id="fleet">
+            <div class="fleet-header">
+                <div>
+                    <h2 class="fleet-title">أسطولنا الفاخر</h2>
+                    <p class="fleet-subtitle">اختر الرفيق المثالي لرحلتك.</p>
+                </div>
+                <div class="fleet-nav">
+                    <button class="fleet-nav-btn fleet-nav-prev" onclick="scrollFleet('prev')">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <button class="fleet-nav-btn fleet-nav-next" onclick="scrollFleet('next')">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fleet-grid" id="fleetGrid">
+                <!-- Car 1 -->
+                <div class="car-card" data-name="تويوتا لاند كروزر">
+                    <div class="car-image-wrapper">
+                        <div class="car-badge car-badge-transmission">أوتوماتيك</div>
+                        <div class="car-badge car-badge-popular">الأكثر طلباً</div>
+                        <div class="car-image"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJ51zwvNZ20bGzJ_qQLb8tWlV0cffRfdiviE9OiRh2thFDUtyMJEtvmMRDHR3MBGkSDGvej_4j8ADp5Foaf6iex1GUBlsRSH4wqcVKUhQnKh3O6IXjdU8d28BXhShio3S-nTgx_qV-LY7ZS9_6X2BR2qKDaH1lcFF3ACkliHWGlzSm3J2-XMTsUkPk3KW8YjTLRi55Nj4spSyiIZDMZkO0nn7Q5grw1ao4gBLFOadQKPH8KbYm88hNRE--vO7yttZY8jWMo_hIdPuj');">
+                        </div>
+                        <div class="car-image-overlay"></div>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">تويوتا لاند كروزر</h3>
+                            <div class="car-price-wrapper">
+                                <span class="car-price">950 ر.س</span>
+                                <span class="car-price-unit">/ يوم</span>
+                            </div>
+                        </div>
+                        <p class="car-description">ملك الصحراء بلا منازع. تصميم داخلي فاخر يلتقي مع الأداء القوي.</p>
+                        <div class="car-specs">
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+                                7 مقاعد
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">speed</span>
+                                210 كم/س
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">local_gas_station</span>
+                                بنزين
+                            </div>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn-outline">التفاصيل</button>
+                            <button class="btn-secondary">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card" data-name="جيب رانجلر روبيكون">
+                    <div class="car-image-wrapper">
+                        <div class="car-badge car-badge-transmission">عادي</div>
+                        <div class="car-image"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDP5kcarxxbvxY2MW6kEHtW2dGTanpTBt1eD2E5hV4LHuQBZCqw9BvCg1FYpa8_cpr6nVavK5KHyiJrAaKuf4wx2IKYwPkDS7TUj_KgEWKBMsAkY9c1CXdmd5rIIDtvjyezZp5X0RADDRvOhnVyxhPyA_ybQaiOqty2viXE5TXr6_NNt2kJps-wlHhpc2E6_eouXRjmeUQnnNPgmeQ3vspB_a8btgkPPmDJHlurOm1qRd8vbKsgmXmAMtjzX4n0Xi58ADDprLWv2wSP');">
+                        </div>
+                        <div class="car-image-overlay"></div>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">جيب رانجلر روبيكون</h3>
+                            <div class="car-price-wrapper">
+                                <span class="car-price">750 ر.س</span>
+                                <span class="car-price-unit">/ يوم</span>
+                            </div>
+                        </div>
+                        <p class="car-description">صُممت للأقوياء. حرية في الهواء الطلق وقدرات دفع رباعي أسطورية.</p>
+                        <div class="car-specs">
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+                                4 مقاعد
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">speed</span>
+                                180 كم/س
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">local_gas_station</span>
+                                بنزين
+                            </div>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn-outline">التفاصيل</button>
+                            <button class="btn-secondary">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card" data-name="نيسان باترول بلاتينيوم">
+                    <div class="car-image-wrapper">
+                        <div class="car-badge car-badge-transmission">أوتوماتيك</div>
+                        <div class="car-image"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD26B8bBy20hOWY7LSGlwCYP99xmXGxnznpMIlufw2FZECX2S14YY5MGMUrDZhU9t2vdt4h1ME_Zgt8o-aT853LaczuZsvd7rWHFpidX1Hxm80vfWgdHChFi5Bxh4-IKDcAHMz7X7Pi68RGxinCiT-UT43JLw7g8s-cmRx1Sl0tFn7x7jmf6BsF4ppfpq1686xsp46dJI7XfiHNvYTpX0a-pJbhZ9aapa_agMnAhHpW6YknTkwp9bLrngobuAVB_OT2d-W-yn6igVXs');">
+                        </div>
+                        <div class="car-image-overlay"></div>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">نيسان باترول بلاتينيوم</h3>
+                            <div class="car-price-wrapper">
+                                <span class="car-price">900 ر.س</span>
+                                <span class="car-price-unit">/ يوم</span>
+                            </div>
+                        </div>
+                        <p class="car-description">تجمع بين الرقي والقوة. مثالية لمغامرات الصحراء العائلية.</p>
+                        <div class="car-specs">
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+                                8 مقاعد
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">speed</span>
+                                200 كم/س
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">local_gas_station</span>
+                                بنزين
+                            </div>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn-outline">التفاصيل</button>
+                            <button class="btn-secondary">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card" data-name="فورد إف-150 رابتور">
+                    <div class="car-image-wrapper">
+                        <div class="car-badge car-badge-transmission">أوتوماتيك</div>
+                        <div class="car-image"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPXpkwgGv4EHXJ6rnZXTzTAHemjL5LfVUAQzXJ6BoCALEJxIbz5rqd72-lY7c0RtEtSu73U3Km3TnyrThoX4kDWZaFai7LApzauH4rbESJlP3hU-oj4236in_Uc04l5ue_Ipr3VsE4QHp9GOiGaxPUiPKMU3YocXVxvtJywm2hYwxDV0NkK9oPXW4FcNYf5sSDbb6-dpHdEqNj9nUISIoFlSc6F_-9wnqIl_oYrsrJ2EWLCvQuGyiOUrg3ZdAtOVgrDqo7H5rPUQG0');">
+                        </div>
+                        <div class="car-image-overlay"></div>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">فورد إف-150 رابتور</h3>
+                            <div class="car-price-wrapper">
+                                <span class="car-price">1100 ر.س</span>
+                                <span class="car-price-unit">/ يوم</span>
+                            </div>
+                        </div>
+                        <p class="car-description">شاحنة أداء عالي السرعة للطرق الوعرة. للباحثين عن الإثارة الحقيقية.</p>
+                        <div class="car-specs">
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+                                5 مقاعد
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">speed</span>
+                                190 كم/س
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">local_gas_station</span>
+                                بنزين
+                            </div>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn-outline">التفاصيل</button>
+                            <button class="btn-secondary">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card" data-name="لاند روفر ديفندر">
+                    <div class="car-image-wrapper">
+                        <div class="car-badge car-badge-transmission">أوتوماتيك</div>
+                        <div class="car-image"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4x_4MbVIjoM2dBRHpMIQRcx8ytbMxoioASsz3xOybUIQEojstwjpF69SUJ3oj6w5UArRgJHi_zkhEUlmKNgXdraNzGXrcePNnLxg9cnnmjk3OiATIGGydXSRUlIwLhEw4eVfEiXjLjaySvGKz8djaJks_ZSze6l1eHsZw9nHtvyQhnO4Ev9EJAqqCREzHhqQDp18Pw6MXMCReVpk3yXTLqL0poa-aq6LhT3KwVFQPHyQHKjpeX7oIopWtc5hoYQ7anBdR8I8VJcQv');">
+                        </div>
+                        <div class="car-image-overlay"></div>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">لاند روفر ديفندر</h3>
+                            <div class="car-price-wrapper">
+                                <span class="car-price">1200 ر.س</span>
+                                <span class="car-price-unit">/ يوم</span>
+                            </div>
+                        </div>
+                        <p class="car-description">رفاهية حديثة أعيد تصورها للطبيعة الوعرة. تصميم أيقوني.</p>
+                        <div class="car-specs">
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+                                5 مقاعد
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">speed</span>
+                                195 كم/س
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">local_gas_station</span>
+                                بنزين
+                            </div>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn-outline">التفاصيل</button>
+                            <button class="btn-secondary">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card" data-name="تويوتا إف جي كروزر">
+                    <div class="car-image-wrapper">
+                        <div class="car-badge car-badge-transmission">عادي</div>
+                        <div class="car-image"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXea2OpdRqo46WfdTiZ-jtgwgLLYDBhlV_6PCiDfT_aeFdExILTH4W6zqkmuZIls0iul0AW6Tf8bhB2iyivtDx8Er9sAzOTXOPr3ZnhNwefVHedzD2SJQQUsneuXvQj61Dveo_d6sMTpoHaopNvdJA5VHja3Cw7WrJ0D8_6BILMaHto9fgQ8c8QxtTBR26r5SGYUWKS8nwX3yvuyh4JWtIwgNsUwpWXvCP-9QtjU7VXpYFl1Fnjf0dO25d1B4vJhsgWWH8PNG0X4Jz');">
+                        </div>
+                        <div class="car-image-overlay"></div>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">تويوتا إف جي كروزر</h3>
+                            <div class="car-price-wrapper">
+                                <span class="car-price">650 ر.س</span>
+                                <span class="car-price-unit">/ يوم</span>
+                            </div>
+                        </div>
+                        <p class="car-description">نمط كلاسيكي مع قدرات حديثة للطرق الوعرة. مرنة وموثوقة.</p>
+                        <div class="car-specs">
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+                                5 مقاعد
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">speed</span>
+                                175 كم/س
+                            </div>
+                            <div class="car-spec">
+                                <span class="material-symbols-outlined">local_gas_station</span>
+                                بنزين
+                            </div>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn-outline">التفاصيل</button>
+                            <button class="btn-secondary">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fleet-view-all">
+                <button class="fleet-view-all-btn">عرض كامل الأسطول</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span class="material-symbols-outlined">landscape</span>
+                        </div>
+                        <h2 class="logo-text">قيلات أجا</h2>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بالجمال الخام للصحراء العربية مع مركبات مصممة لقهر الكثبان الرملية بأناقة وأمان.
+                    </p>
+                    <div class="footer-social">
+                        <a class="social-link" href="#" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#about">من نحن</a></li>
+                        <li><a class="footer-link" href="#fleet">أسطولنا</a></li>
+                        <li><a class="footer-link" href="#offers">العروض</a></li>
+                        <li><a class="footer-link" href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الدعم</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#">مركز المساعدة</a></li>
+                        <li><a class="footer-link" href="#">الشروط والأحكام</a></li>
+                        <li><a class="footer-link" href="#">معلومات التأمين</a></li>
+                        <li><a class="footer-link" href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">التواصل</h4>
+                    <ul class="footer-contact">
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">location_on</span>
+                            حائل، المملكة العربية السعودية
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">call</span>
+                            +966 50 123 4567
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">mail</span>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553c3b333a1524342c393421343f347b2634">[email&#160;protected]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 قيلات أجا. جميع الحقوق محفوظة.</p>
+                <div class="footer-settings">
+                    <span class="footer-setting">العربية</span>
+                    <span class="footer-setting">ر.س</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+</body>
+
+</html>
