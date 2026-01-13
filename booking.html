@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>احجز رحلتك - قيلات أجا</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="nav-header" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">landscape</span>
+                </div>
+                <h1 class="logo-text">قيلات أجا</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="index2.html#home">الرئيسية</a>
+                <a class="nav-link" href="booking.html">احجز الآن</a>
+                <a class="nav-link" href="packages.html">الباقات</a>
+                <a class="nav-link" href="reviews.html">التقييمات</a>
+                <a class="nav-link" href="faq.html">الأسئلة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </div>
+            <div class="nav-actions">
+                <a class="nav-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">
+                    حساب جديد
+                </button>
+            </div>
+            <button class="nav-mobile-menu" id="mobileMenuBtn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a class="mobile-menu-link" href="index2.html#home">الرئيسية</a>
+            <a class="mobile-menu-link" href="booking.html">احجز الآن</a>
+            <a class="mobile-menu-link" href="packages.html">الباقات</a>
+            <a class="mobile-menu-link" href="reviews.html">التقييمات</a>
+            <a class="mobile-menu-link" href="faq.html">الأسئلة الشائعة</a>
+            <a class="mobile-menu-link" href="contact.html">تواصل معنا</a>
+            <div class="mobile-menu-actions">
+                <a class="mobile-menu-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">حساب جديد</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Booking Section -->
+        <section class="booking-section">
+            <div class="booking-header">
+                <span class="booking-badge">
+                    <span class="material-symbols-outlined">event_note</span>
+                    احجز الآن
+                </span>
+                <h1 class="booking-title">احجز رحلتك الصحراوية</h1>
+                <p class="booking-subtitle">اختر الباقة المناسبة والتاريخ والمدة وابدأ رحلتك</p>
+            </div>
+
+            <div class="booking-container">
+                <!-- Booking Form -->
+                <div class="booking-form-wrapper">
+                    <form class="booking-form" id="bookingForm">
+                        <!-- Step 1: Package Selection -->
+                        <div class="form-section active" data-step="1">
+                            <div class="section-header">
+                                <h3>الخطوة 1: اختر الباقة</h3>
+                                <p>اختر الباقة المناسبة لرحلتك</p>
+                            </div>
+
+                            <div class="package-options">
+                                <label class="package-card">
+                                    <input type="radio" name="package" value="weekend" required>
+                                    <div class="package-content">
+                                        <div class="package-icon">
+                                            <span class="material-symbols-outlined">calendar_view_week</span>
+                                        </div>
+                                        <h4>رحلة نهاية الأسبوع</h4>
+                                        <p>3 أيام مغامرة</p>
+                                        <div class="package-price">2,150 ر.س</div>
+                                    </div>
+                                </label>
+
+                                <label class="package-card">
+                                    <input type="radio" name="package" value="luxury" required>
+                                    <div class="package-content">
+                                        <div class="package-icon">
+                                            <span class="material-symbols-outlined">diamond</span>
+                                        </div>
+                                        <h4>تجربة الفخامة</h4>
+                                        <p>مع سائق خبير</p>
+                                        <div class="package-price">5,500 ر.س</div>
+                                    </div>
+                                </label>
+
+                                <label class="package-card">
+                                    <input type="radio" name="package" value="family" required>
+                                    <div class="package-content">
+                                        <div class="package-icon">
+                                            <span class="material-symbols-outlined">people</span>
+                                        </div>
+                                        <h4>مغامرة عائلية</h4>
+                                        <p>آمنة وممتعة</p>
+                                        <div class="package-price">3,200 ر.س</div>
+                                    </div>
+                                </label>
+
+                                <label class="package-card">
+                                    <input type="radio" name="package" value="romantic" required>
+                                    <div class="package-content">
+                                        <div class="package-icon">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                        <h4>رومانسية الصحراء</h4>
+                                        <p>تحت النجوم</p>
+                                        <div class="package-price">6,500 ر.س</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Date & Duration -->
+                        <div class="form-section" data-step="2">
+                            <div class="section-header">
+                                <h3>الخطوة 2: حدد التاريخ والمدة</h3>
+                                <p>اختر تاريخ بدء الرحلة وعدد الأيام</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="startDate">تاريخ البدء</label>
+                                <input type="date" id="startDate" name="startDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="duration">عدد الأيام</label>
+                                <select id="duration" name="duration" required>
+                                    <option value="">اختر عدد الأيام</option>
+                                    <option value="1">يوم واحد</option>
+                                    <option value="2">يومين</option>
+                                    <option value="3">3 أيام</option>
+                                    <option value="4">4 أيام</option>
+                                    <option value="5">5 أيام</option>
+                                    <option value="7">أسبوع كامل</option>
+                                </select>
+                            </div>
+
+                            <div class="date-summary">
+                                <div class="summary-item">
+                                    <span class="summary-label">تاريخ البدء:</span>
+                                    <span class="summary-value" id="summaryStart">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">تاريخ النهاية:</span>
+                                    <span class="summary-value" id="summaryEnd">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">عدد الأيام:</span>
+                                    <span class="summary-value" id="summaryDays">-</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Guest Information -->
+                        <div class="form-section" data-step="3">
+                            <div class="section-header">
+                                <h3>الخطوة 3: معلومات المستأجر</h3>
+                                <p>أخبرنا عن نفسك</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fullName">الاسم الكامل</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">البريد الإلكتروني</label>
+                                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">رقم الهاتف</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guestCount">عدد الضيوف</label>
+                                <select id="guestCount" name="guestCount" required>
+                                    <option value="">اختر عدد الضيوف</option>
+                                    <option value="1">شخص واحد</option>
+                                    <option value="2">شخصين</option>
+                                    <option value="3">3 أشخاص</option>
+                                    <option value="4">4 أشخاص</option>
+                                    <option value="5">5 أشخاص</option>
+                                    <option value="6">6 أشخاص</option>
+                                    <option value="7">7 أشخاص أو أكثر</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes">ملاحظات إضافية</label>
+                                <textarea id="notes" name="notes" placeholder="أخبرنا عن أي متطلبات خاصة..." rows="4"></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">أوافق على <a href="#" class="link">شروط الخدمة</a> و<a href="#" class="link">سياسة الخصوصية</a></label>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn-prev" id="prevBtn" style="display: none;">
+                                <span class="material-symbols-outlined">arrow_back</span>
+                                السابق
+                            </button>
+                            <button type="button" class="btn-next" id="nextBtn">
+                                التالي
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                            <button type="submit" class="btn-submit" id="submitBtn" style="display: none;">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                تأكيد الحجز
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Booking Summary -->
+                <div class="booking-summary">
+                    <div class="summary-card">
+                        <h3>ملخص الحجز</h3>
+
+                        <div class="summary-section">
+                            <h4>الباقة المختارة</h4>
+                            <div class="summary-package">
+                                <div class="package-icon-summary">
+                                    <span class="material-symbols-outlined">card_giftcard</span>
+                                </div>
+                                <div class="package-info">
+                                    <p class="package-name" id="summaryPackageName">اختر باقة</p>
+                                    <p class="package-description" id="summaryPackageDesc">-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-section">
+                            <h4>التفاصيل</h4>
+                            <div class="summary-items">
+                                <div class="summary-item-row">
+                                    <span>الفترة الزمنية</span>
+                                    <span id="summaryPeriod">-</span>
+                                </div>
+                                <div class="summary-item-row">
+                                    <span>عدد الأيام</span>
+                                    <span id="summaryDaysCount">-</span>
+                                </div>
+                                <div class="summary-item-row">
+                                    <span>عدد الضيوف</span>
+                                    <span id="summaryGuests">-</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-section">
+                            <div class="price-breakdown">
+                                <div class="price-row">
+                                    <span>سعر الباقة</span>
+                                    <span id="pricePackage">0 ر.س</span>
+                                </div>
+                                <div class="price-row">
+                                    <span>عدد الأيام</span>
+                                    <span id="priceDays">×1</span>
+                                </div>
+                                <div class="price-row total">
+                                    <span>الإجمالي</span>
+                                    <span id="totalPrice">0 ر.س</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-included">
+                            <h4>المتضمن في الباقة</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                    <span>سيارة 4WD فاخرة</span>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                    <span>تأمين شامل</span>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                    <span>دعم 24/7</span>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                    <span>معدات تخييم كاملة</span>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                    <span>خدمة الطعام والشراب</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span class="material-symbols-outlined">landscape</span>
+                        </div>
+                        <h2 class="logo-text">قيلات أجا</h2>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بالجمال الخام للصحراء العربية مع مركبات مصممة لقهر الكثبان الرملية بأناقة وأمان.
+                    </p>
+                    <div class="footer-social">
+                        <a class="social-link" href="#" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#about">من نحن</a></li>
+                        <li><a class="footer-link" href="#fleet">أسطولنا</a></li>
+                        <li><a class="footer-link" href="#offers">العروض</a></li>
+                        <li><a class="footer-link" href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الدعم</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#">مركز المساعدة</a></li>
+                        <li><a class="footer-link" href="#">الشروط والأحكام</a></li>
+                        <li><a class="footer-link" href="#">معلومات التأمين</a></li>
+                        <li><a class="footer-link" href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">التواصل</h4>
+                    <ul class="footer-contact">
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">location_on</span>
+                            حائل، المملكة العربية السعودية
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">call</span>
+                            +966 50 123 4567
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">mail</span>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553c3b333a1524342c393421343f347b2634">[email&#160;protected]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 قيلات أجا. جميع الحقوق محفوظة.</p>
+                <div class="footer-settings">
+                    <span class="footer-setting">العربية</span>
+                    <span class="footer-setting">ر.س</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+    <script src="booking.js"></script>
+</body>
+
+</html>

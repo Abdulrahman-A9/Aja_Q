@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>الأسئلة الشائعة - قيلات أجا</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="nav-header" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">landscape</span>
+                </div>
+                <h1 class="logo-text">قيلات أجا</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="index2.html#home">الرئيسية</a>
+                <a class="nav-link" href="booking.html">احجز الآن</a>
+                <a class="nav-link" href="packages.html">الباقات</a>
+                <a class="nav-link" href="reviews.html">التقييمات</a>
+                <a class="nav-link" href="faq.html">الأسئلة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </div>
+            <div class="nav-actions">
+                <a class="nav-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">
+                    حساب جديد
+                </button>
+            </div>
+            <button class="nav-mobile-menu" id="mobileMenuBtn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a class="mobile-menu-link" href="index2.html#home">الرئيسية</a>
+            <a class="mobile-menu-link" href="booking.html">احجز الآن</a>
+            <a class="mobile-menu-link" href="packages.html">الباقات</a>
+            <a class="mobile-menu-link" href="reviews.html">التقييمات</a>
+            <a class="mobile-menu-link" href="faq.html">الأسئلة الشائعة</a>
+            <a class="mobile-menu-link" href="contact.html">تواصل معنا</a>
+            <div class="mobile-menu-actions">
+                <a class="mobile-menu-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">حساب جديد</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- FAQ Header -->
+        <section class="faq-hero">
+            <div class="faq-hero-content">
+                <span class="badge-hero">
+                    <span class="material-symbols-outlined">help</span>
+                    أسئلة شائعة
+                </span>
+                <h1 class="hero-title">الأسئلة الشائعة</h1>
+                <p class="hero-subtitle">إجابات على أكثر الأسئلة التي يسألها عملاؤنا</p>
+            </div>
+        </section>
+
+        <!-- FAQ Search -->
+        <section class="faq-search-section">
+            <div class="search-container">
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input type="text" id="faqSearch" class="faq-search-input" placeholder="ابحث عن سؤال...">
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="faq-categories">
+            <button class="faq-category-btn active" data-category="all">الكل</button>
+            <button class="faq-category-btn" data-category="booking">الحجز</button>
+            <button class="faq-category-btn" data-category="pricing">الأسعار</button>
+            <button class="faq-category-btn" data-category="services">الخدمات</button>
+            <button class="faq-category-btn" data-category="safety">الأمان</button>
+            <button class="faq-category-btn" data-category="policies">السياسات</button>
+        </section>
+
+        <!-- FAQ Items -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <!-- Category: Booking -->
+                <div class="faq-group" data-category="booking">
+                    <h3 class="faq-group-title">الحجز والتحضير</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>كيف أحجز رحلة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>يمكنك الحجز بسهولة من خلال موقعنا الإلكتروني. اتبع الخطوات التالية:</p>
+                            <ul>
+                                <li>اختر الباقة المناسبة لك</li>
+                                <li>حدد تاريخ البدء وعدد الأيام</li>
+                                <li>أدخل معلوماتك الشخصية</li>
+                                <li>ادفع ثمن الحجز بشكل آمن</li>
+                                <li>سنقوم بتأكيد حجزك عبر البريد الإلكتروني</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل يمكنني إلغاء أو تعديل حجزي؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، بالتأكيد! يمكنك إلغاء أو تعديل حجزك حسب السياسات التالية:</p>
+                            <ul>
+                                <li>الإلغاء قبل 14 يوم: استرجاع كامل المبلغ</li>
+                                <li>الإلغاء قبل 7 أيام: استرجاع 75% من المبلغ</li>
+                                <li>الإلغاء قبل 3 أيام: استرجاع 50% من المبلغ</li>
+                                <li>الإلغاء بعد 3 أيام: لا يتم استرجاع المبلغ</li>
+                            </ul>
+                            <p>تعديل التاريخ والمدة: مجاني إذا كان هناك توفر</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>كم يوماً قبل الرحلة يجب أن أحجز؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نوصيك بالحجز قبل 2-3 أسابيع على الأقل لضمان توفر الباقة المطلوبة. لكن يمكنك الحجز في وقت أقصر إذا كان هناك توفر.</p>
+                            <p>في فترات الذروة (الإجازات الرسمية، نهايات الأسبوع)، قد تحتاج للحجز قبل شهر أو أكثر.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل هناك حد أدنى أو أقصى لعدد الأيام؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>الحد الأدنى ليوم واحد والحد الأقصى أسبوع كامل. للرحلات أطول من ذلك، يرجى التواصل معنا مباشرة للحصول على عرض خاص.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Pricing -->
+                <div class="faq-group" data-category="pricing">
+                    <h3 class="faq-group-title">الأسعار والدفع</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل الأسعار تشمل جميع الخدمات؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، جميع أسعارنا شاملة:</p>
+                            <ul>
+                                <li>السيارة والوقود</li>
+                                <li>التأمين الشامل</li>
+                                <li>المرشد السياحي</li>
+                                <li>الطعام والشراب</li>
+                                <li>معدات التخييم</li>
+                                <li>الدعم الفني 24/7</li>
+                            </ul>
+                            <p>الأشياء الوحيدة غير المشملة: الهدايا الشخصية والمشروبات الكحولية (إن وجدت)</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ما طرق الدفع المتاحة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نقبل عدة طرق دفع آمنة:</p>
+                            <ul>
+                                <li>بطاقات الائتمان والخصم (Visa, MasterCard)</li>
+                                <li>التحويل البنكي</li>
+                                <li>محافظ رقمية (Apple Pay, Google Pay)</li>
+                                <li>تطبيقات الدفع المحلية (Moyasar, 2Checkout)</li>
+                            </ul>
+                            <p>جميع المعاملات مشفرة وآمنة 100%</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل هناك خصومات جماعية؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم! نقدم خصومات جماعية:</p>
+                            <ul>
+                                <li>من 6-10 أشخاص: خصم 5%</li>
+                                <li>من 11-20 شخص: خصم 10%</li>
+                                <li>أكثر من 20 شخص: خصم 15% + عرض خاص</li>
+                            </ul>
+                            <p>تواصل معنا مباشرة للحصول على عرض مخصص لمجموعتك.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل يمكن الدفع على دفعات؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، يمكن الدفع على دفعات:</p>
+                            <ul>
+                                <li>دفعة أولى 50% عند الحجز</li>
+                                <li>دفعة ثانية 50% قبل 7 أيام من الرحلة</li>
+                            </ul>
+                            <p>للرحلات الكبيرة (أكثر من 10 أشخاص)، يمكن ترتيب خطة دفع مخصصة.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Services -->
+                <div class="faq-group" data-category="services">
+                    <h3 class="faq-group-title">الخدمات والمزايا</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ما نوع السيارات المستخدمة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نستخدم سيارات 4WD الفاخرة والحديثة:</p>
+                            <ul>
+                                <li>في الباقات العادية: Toyota Land Cruiser، Nissan Patrol</li>
+                                <li>في الباقات الفاخرة: Mercedes G-Class، Range Rover</li>
+                                <li>جميع السيارات مجهزة بـ: GPS، تكييف، نظام صوتي، وحزام أمان</li>
+                            </ul>
+                            <p>تتم صيانة السيارات بشكل دوري وفحص شامل قبل كل رحلة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>من يقود السيارة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>لديك خيارات:</p>
+                            <ul>
+                                <li>يمكنك القيادة بنفسك (إذا كان لديك رخصة دولية)</li>
+                                <li>سائق محترف من فريقنا (في معظم الباقات)</li>
+                                <li>سائق خاص في الباقات الفاخرة والرومانسية</li>
+                            </ul>
+                            <p>السائقون محترفون وودودون ولديهم خبرة في قيادة الصحراء.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ماذا تشمل الوجبات؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>الوجبات عالية الجودة وتشمل:</p>
+                            <ul>
+                                <li>الإفطار: وجبة صحية متنوعة</li>
+                                <li>الغداء: طعام مشوي أو مطبوخ طازج</li>
+                                <li>العشاء: وجبة رئيسية شهية</li>
+                                <li>الوجبات الخفيفة والمشروبات طوال اليوم</li>
+                            </ul>
+                            <p>نتعامل مع متطلبات غذائية خاصة (نباتي، حلال، إلخ) - أخبرنا مسبقاً!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل تتوفر جولات مخصصة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم! نقدم جولات مخصصة حسب رغباتك. يمكن تشمل:</p>
+                            <ul>
+                                <li>رحلات بحرية أو تصوير</li>
+                                <li>جولات ثقافية أو تاريخية</li>
+                                <li>رحلات مغامرة أو رياضات</li>
+                                <li>جولات شهر عسل أو احتفالات خاصة</li>
+                            </ul>
+                            <p>تواصل معنا لترتيب جولة حسب احتياجاتك.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Safety -->
+                <div class="faq-group" data-category="safety">
+                    <h3 class="faq-group-title">الأمان والسلامة</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل الرحلة آمنة للعائلات والأطفال؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، بالتأكيد! نحن نركز على السلامة:</p>
+                            <ul>
+                                <li>سيارات آمنة وحديثة مع أحزمة أمان</li>
+                                <li>مرشدون مدربون على الإسعافات الأولية</li>
+                                <li>معدات أمان شاملة</li>
+                                <li>طرق آمنة وموثقة</li>
+                                <li>تأمين شامل يغطي الجميع</li>
+                            </ul>
+                            <p>سلامتك وسلامة عائلتك أولويتنا الأولى.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل التأمين مشمول؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، التأمين الشامل مشمول في جميع الباقات:</p>
+                            <ul>
+                                <li>تأمين السيارة والحوادث</li>
+                                <li>تأمين صحي للزوار</li>
+                                <li>تأمين الممتلكات الشخصية</li>
+                                <li>تأمين الإلغاء (خيار إضافي)</li>
+                            </ul>
+                            <p>تفاصيل التأمين مشملة في وثيقة الحجز.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ماذا لو حدثت حالة طوارئ؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نحن مستعدون لأي حالة طوارئ:</p>
+                            <ul>
+                                <li>فريق إسعافات أولية متدرب</li>
+                                <li>اتصال مباشر مع الخدمات الطبية</li>
+                                <li>معدات طوارئ كاملة في السيارة</li>
+                                <li>دعم فني 24/7 يمكنك الاتصال به في أي وقت</li>
+                            </ul>
+                            <p>رقم الطوارئ سيُعطى لك قبل الرحلة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل معدات التخييم آمنة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، جميع معدات التخييم:</p>
+                            <ul>
+                                <li>عالية الجودة والاستقرار</li>
+                                <li>مفحوصة بشكل دوري</li>
+                                <li>مناسبة للطقس الصحراوي</li>
+                                <li>مجهزة بأنظمة تهوية وحماية</li>
+                            </ul>
+                            <p>نتأكد من سلامة واستقرار الخيمة قبل النوم.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Policies -->
+                <div class="faq-group" data-category="policies">
+                    <h3 class="faq-group-title">السياسات والشروط</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ما سياسة الخصوصية؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نحن نحافظ على خصوصيتك بكل احترام:</p>
+                            <ul>
+                                <li>لا نشارك بيانات الزوار مع أطراف ثالثة</li>
+                                <li>جميع المعلومات محفوظة بشكل آمن</li>
+                                <li>يمكنك طلب حذف بيانتك في أي وقت</li>
+                                <li>نستخدم التشفير لحماية المعلومات الحساسة</li>
+                            </ul>
+                            <p>اقرأ سياسة الخصوصية الكاملة على موقعنا.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ما متطلبات الحجز؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>المتطلبات الأساسية:</p>
+                            <ul>
+                                <li>عمر 18 سنة فما فوق (للعاملين بالسيارة)</li>
+                                <li>رخصة قيادة دولية (إن كنت ستقود)</li>
+                                <li>بطاقة هوية صحيحة</li>
+                                <li>البريد الإلكتروني رقم هاتف فعال</li>
+                                <li>اتفاق مع الشروط والسياسات</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل هناك قيود على ما يمكنني فعله في الرحلة؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نريد أن تستمتع برحلتك، لكن هناك قواعد سلامة:</p>
+                            <ul>
+                                <li>احترم البيئة والطبيعة</li>
+                                <li>اتبع تعليمات المرشد</li>
+                                <li>عدم التصرف بطريقة خطرة أو غير قانونية</li>
+                                <li>احترم الثقافة المحلية</li>
+                                <li>لا تترك أي نفايات في الصحراء</li>
+                            </ul>
+                            <p>نحن نركز على تجربة آمنة وممتعة للجميع.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ماذا عن الطقس والظروف الجوية؟</span>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نتابع الطقس بعناية:</p>
+                            <ul>
+                                <li>تتم مراقبة الطقس يومياً</li>
+                                <li>في حالة عدم الأمان، قد نؤجل أو نلغي الرحلة</li>
+                                <li>سيتم إرجاع كامل المبلغ أو إعادة جدولة</li>
+                                <li>معدات مناسبة للحرارة والبرد</li>
+                            </ul>
+                            <p>سلامتك أهم من أي شيء آخر.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Have Questions -->
+        <section class="contact-support-section">
+            <div class="support-card">
+                <span class="material-symbols-outlined support-icon">help_center</span>
+                <h3>لم تجد إجابتك؟</h3>
+                <p>تواصل معنا مباشرة وسيكون فريقنا سعيد بمساعدتك</p>
+                <div class="support-options">
+                    <a href="contact.html" class="btn-support">
+                        <span class="material-symbols-outlined">mail</span>
+                        راسلنا البريد
+                    </a>
+                    <a href="tel:+966501234567" class="btn-support">
+                        <span class="material-symbols-outlined">phone</span>
+                        اتصل بنا
+                    </a>
+                    <a href="#chat" class="btn-support">
+                        <span class="material-symbols-outlined">chat</span>
+                        محادثة فورية
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span class="material-symbols-outlined">landscape</span>
+                        </div>
+                        <h2 class="logo-text">قيلات أجا</h2>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بالجمال الخام للصحراء العربية مع مركبات مصممة لقهر الكثبان الرملية بأناقة وأمان.
+                    </p>
+                    <div class="footer-social">
+                        <a class="social-link" href="#" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#about">من نحن</a></li>
+                        <li><a class="footer-link" href="#fleet">أسطولنا</a></li>
+                        <li><a class="footer-link" href="#offers">العروض</a></li>
+                        <li><a class="footer-link" href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الدعم</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#">مركز المساعدة</a></li>
+                        <li><a class="footer-link" href="#">الشروط والأحكام</a></li>
+                        <li><a class="footer-link" href="#">معلومات التأمين</a></li>
+                        <li><a class="footer-link" href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">التواصل</h4>
+                    <ul class="footer-contact">
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">location_on</span>
+                            حائل، المملكة العربية السعودية
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">call</span>
+                            +966 50 123 4567
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">mail</span>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553c3b333a1524342c393421343f347b2634">[email&#160;protected]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 قيلات أجا. جميع الحقوق محفوظة.</p>
+                <div class="footer-settings">
+                    <span class="footer-setting">العربية</span>
+                    <span class="footer-setting">ر.س</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+    <script src="faq.js"></script>
+</body>
+
+</html>

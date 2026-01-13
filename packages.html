@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>تفاصيل الباقات - قيلات أجا</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="nav-header" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">landscape</span>
+                </div>
+                <h1 class="logo-text">قيلات أجا</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="index2.html#home">الرئيسية</a>
+                <a class="nav-link" href="booking.html">احجز الآن</a>
+                <a class="nav-link" href="packages.html">الباقات</a>
+                <a class="nav-link" href="reviews.html">التقييمات</a>
+                <a class="nav-link" href="faq.html">الأسئلة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </div>
+            <div class="nav-actions">
+                <a class="nav-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">
+                    حساب جديد
+                </button>
+            </div>
+            <button class="nav-mobile-menu" id="mobileMenuBtn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a class="mobile-menu-link" href="index2.html#home">الرئيسية</a>
+            <a class="mobile-menu-link" href="booking.html">احجز الآن</a>
+            <a class="mobile-menu-link" href="packages.html">الباقات</a>
+            <a class="mobile-menu-link" href="reviews.html">التقييمات</a>
+            <a class="mobile-menu-link" href="faq.html">الأسئلة الشائعة</a>
+            <a class="mobile-menu-link" href="contact.html">تواصل معنا</a>
+            <div class="mobile-menu-actions">
+                <a class="mobile-menu-login" href="#login">تسجيل الدخول</a>
+                <button class="btn-primary">حساب جديد</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Packages Header -->
+        <section class="packages-hero">
+            <div class="packages-hero-content">
+                <span class="badge-hero">
+                    <span class="material-symbols-outlined">card_giftcard</span>
+                    باقات وعروض فاخرة
+                </span>
+                <h1 class="hero-title">اختر الباقة المناسبة لك</h1>
+                <p class="hero-subtitle">تجارب صحراوية فريدة مصممة خصيصاً لكل ذوق وميزانية</p>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <button class="filter-btn active" data-filter="all">جميع الباقات</button>
+                    <button class="filter-btn" data-filter="short">قصيرة (يوم - يومين)</button>
+                    <button class="filter-btn" data-filter="medium">متوسطة (3-4 أيام)</button>
+                    <button class="filter-btn" data-filter="long">طويلة (أسبوع وأكثر)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Grid -->
+        <section class="packages-section">
+            <div class="packages-grid">
+                <!-- Package 1: Weekend Package -->
+                <div class="package-detail-card" data-category="short">
+                    <div class="package-image">
+                        <div class="package-image-placeholder" style="background: linear-gradient(135deg, #cf5702 0%, #f57c00 100%);"></div>
+                        <div class="package-badge">عرض خاص</div>
+                    </div>
+                    <div class="package-body">
+                        <h3 class="package-title">رحلة نهاية الأسبوع</h3>
+                        <p class="package-description">مغامرة صحراوية رائعة لمدة 3 أيام مع كل الخدمات المطلوبة</p>
+                        
+                        <div class="package-rating">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star_half</span>
+                            </div>
+                            <span class="rating-text">4.5/5 (127 تقييم)</span>
+                        </div>
+
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">المدة</p>
+                                    <p class="detail-value">3 أيام و 2 ليلة</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">people</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">الحد الأقصى</p>
+                                    <p class="detail-value">4 أشخاص</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">directions_car</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">نوع السيارة</p>
+                                    <p class="detail-value">4WD فاخرة</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-section">
+                            <h4>المميزات المتضمنة</h4>
+                            <ul class="features-list-detail">
+                                <li><span class="material-symbols-outlined">check_circle</span> سيارة 4WD مجهزة بأحدث التقنيات</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> تأمين شامل وضمان</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> وجبات طعام عالية الجودة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> معدات تخييم كاملة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> مرشد سياحي محترف</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> دعم فني 24/7</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-current">2,150 ر.س</div>
+                            <div class="price-original">2,500 ر.س</div>
+                            <div class="price-save">توفير 350 ر.س</div>
+                        </div>
+
+                        <a href="booking.html" class="btn-book-now">
+                            <span class="material-symbols-outlined">event_note</span>
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 2: Luxury Experience -->
+                <div class="package-detail-card" data-category="long">
+                    <div class="package-image">
+                        <div class="package-image-placeholder" style="background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);"></div>
+                        <div class="package-badge premium">الأفضل</div>
+                    </div>
+                    <div class="package-body">
+                        <h3 class="package-title">تجربة الفخامة</h3>
+                        <p class="package-description">رحلة فاخرة مع سائق خاص وخدمات بنجمة خمسة</p>
+                        
+                        <div class="package-rating">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                            <span class="rating-text">5.0/5 (89 تقييم)</span>
+                        </div>
+
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">المدة</p>
+                                    <p class="detail-value">5 أيام و 4 ليالي</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">people</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">الحد الأقصى</p>
+                                    <p class="detail-value">3 أشخاص</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">directions_car</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">نوع السيارة</p>
+                                    <p class="detail-value">G-Class فاخرة</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-section">
+                            <h4>المميزات المتضمنة</h4>
+                            <ul class="features-list-detail">
+                                <li><span class="material-symbols-outlined">check_circle</span> سيارة Mercedes G-Class حديثة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> سائق خاص محترف وودود</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> طعام من الشيف الخاص</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> خيمة فاخرة مع تكييف</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> تجارب حصرية ومخصصة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> خدمة كونسيرج شاملة</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-current">5,500 ر.س</div>
+                            <div class="price-original">6,500 ر.س</div>
+                            <div class="price-save">توفير 1,000 ر.س</div>
+                        </div>
+
+                        <a href="booking.html" class="btn-book-now premium">
+                            <span class="material-symbols-outlined">event_note</span>
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 3: Family Adventure -->
+                <div class="package-detail-card" data-category="medium">
+                    <div class="package-image">
+                        <div class="package-image-placeholder" style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);"></div>
+                        <div class="package-badge">عائلي</div>
+                    </div>
+                    <div class="package-body">
+                        <h3 class="package-title">مغامرة عائلية</h3>
+                        <p class="package-description">رحلة آمنة وممتعة للعائلة بأكملها مع أنشطة مناسبة للأطفال</p>
+                        
+                        <div class="package-rating">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star_half</span>
+                            </div>
+                            <span class="rating-text">4.7/5 (156 تقييم)</span>
+                        </div>
+
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">المدة</p>
+                                    <p class="detail-value">4 أيام و 3 ليالي</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">people</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">الحد الأقصى</p>
+                                    <p class="detail-value">6 أشخاص</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">directions_car</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">نوع السيارة</p>
+                                    <p class="detail-value">4WD عائلي</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-section">
+                            <h4>المميزات المتضمنة</h4>
+                            <ul class="features-list-detail">
+                                <li><span class="material-symbols-outlined">check_circle</span> سيارة 4WD آمنة وفسيحة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> مرشد سياحي ودود وملم بالعائلات</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> وجبات صحية مناسبة للأطفال</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> أنشطة تفاعلية وآمنة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> معدات تخييم عائلية</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> تأمين شامل للأطفال</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-current">3,200 ر.س</div>
+                            <div class="price-original">3,900 ر.س</div>
+                            <div class="price-save">توفير 700 ر.س</div>
+                        </div>
+
+                        <a href="booking.html" class="btn-book-now">
+                            <span class="material-symbols-outlined">event_note</span>
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 4: Romantic Getaway -->
+                <div class="package-detail-card" data-category="medium">
+                    <div class="package-image">
+                        <div class="package-image-placeholder" style="background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);"></div>
+                        <div class="package-badge">رومانسي</div>
+                    </div>
+                    <div class="package-body">
+                        <h3 class="package-title">رومانسية الصحراء</h3>
+                        <p class="package-description">عطلة رومانسية تحت النجوم مع عشاء خاص وأجواء ساحرة</p>
+                        
+                        <div class="package-rating">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                            <span class="rating-text">5.0/5 (73 تقييم)</span>
+                        </div>
+
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">المدة</p>
+                                    <p class="detail-value">3 أيام و 2 ليلة</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">people</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">الحد الأقصى</p>
+                                    <p class="detail-value">شخصين فقط</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">directions_car</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">نوع السيارة</p>
+                                    <p class="detail-value">4WD خاصة</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-section">
+                            <h4>المميزات المتضمنة</h4>
+                            <ul class="features-list-detail">
+                                <li><span class="material-symbols-outlined">check_circle</span> سيارة 4WD خاصة ومريحة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> خيمة فاخرة مع ديكور رومانسي</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> عشاء رومانسي تحت النجوم</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> شمبانيا وعصائر خاصة</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> موسيقى حية وأضواء</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> خصوصية كاملة</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-current">6,500 ر.س</div>
+                            <div class="price-original">7,500 ر.س</div>
+                            <div class="price-save">توفير 1,000 ر.س</div>
+                        </div>
+
+                        <a href="booking.html" class="btn-book-now">
+                            <span class="material-symbols-outlined">event_note</span>
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 5: Photography Tour -->
+                <div class="package-detail-card" data-category="long">
+                    <div class="package-image">
+                        <div class="package-image-placeholder" style="background: linear-gradient(135deg, #ff6f00 0%, #e65100 100%);"></div>
+                        <div class="package-badge">تصوير</div>
+                    </div>
+                    <div class="package-body">
+                        <h3 class="package-title">جولة التصوير الاحترافية</h3>
+                        <p class="package-description">رحلة متخصصة للمصورين مع أفضل الأوقات والأماكن للتصوير</p>
+                        
+                        <div class="package-rating">
+                            <div class="stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star_half</span>
+                            </div>
+                            <span class="rating-text">4.8/5 (45 تقييم)</span>
+                        </div>
+
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">المدة</p>
+                                    <p class="detail-value">5 أيام و 4 ليالي</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">people</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">الحد الأقصى</p>
+                                    <p class="detail-value">6 أشخاص</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <span class="material-symbols-outlined">directions_car</span>
+                                </span>
+                                <div>
+                                    <p class="detail-label">نوع السيارة</p>
+                                    <p class="detail-value">4WD متخصصة</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-section">
+                            <h4>المميزات المتضمنة</h4>
+                            <ul class="features-list-detail">
+                                <li><span class="material-symbols-outlined">check_circle</span> مرشد تصوير احترافي</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> أفضل أوقات الذهبية والزرقاء</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> مواقع حصرية للتصوير</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> نصائح ودروس احترافية</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> دعم تقني للمعدات</li>
+                                <li><span class="material-symbols-outlined">check_circle</span> تحرير صور احترافي</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-current">4,800 ر.س</div>
+                            <div class="price-original">5,500 ر.س</div>
+                            <div class="price-save">توفير 700 ر.س</div>
+                        </div>
+
+                        <a href="booking.html" class="btn-book-now">
+                            <span class="material-symbols-outlined">event_note</span>
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section-packages">
+            <div class="reviews-header">
+                <h2>ماذا يقول عملاؤنا؟</h2>
+                <p>تقييمات وآراء من زملاء الرحلات الراضين</p>
+            </div>
+            <div class="reviews-grid-packages">
+                <div class="review-card-packages">
+                    <div class="review-header-packages">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">أ.م</div>
+                            <div>
+                                <h4>أحمد محمود</h4>
+                                <p>زار في ديسمبر 2025</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                        </div>
+                    </div>
+                    <p class="review-text-packages">تجربة لا تُنسى! الخدمة كانت ممتازة والفريق احترافي جداً. سأعود بكل تأكيد!</p>
+                </div>
+
+                <div class="review-card-packages">
+                    <div class="review-header-packages">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">ف.ع</div>
+                            <div>
+                                <h4>فاطمة علي</h4>
+                                <p>زارت في نوفمبر 2025</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star_half</span>
+                        </div>
+                    </div>
+                    <p class="review-text-packages">الباقة العائلية كانت رائعة! أطفالي استمتعوا كثيراً والطعام كان لذيذاً جداً.</p>
+                </div>
+
+                <div class="review-card-packages">
+                    <div class="review-header-packages">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">س.م</div>
+                            <div>
+                                <h4>سارة محمد</h4>
+                                <p>زارت في أكتوبر 2025</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                        </div>
+                    </div>
+                    <p class="review-text-packages">الباقة الرومانسية كانت الحلم! عشاء تحت النجوم وأجواء ساحرة. شكراً قيلات أجا!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span class="material-symbols-outlined">landscape</span>
+                        </div>
+                        <h2 class="logo-text">قيلات أجا</h2>
+                    </div>
+                    <p class="footer-description">
+                        استمتع بالجمال الخام للصحراء العربية مع مركبات مصممة لقهر الكثبان الرملية بأناقة وأمان.
+                    </p>
+                    <div class="footer-social">
+                        <a class="social-link" href="#" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#about">من نحن</a></li>
+                        <li><a class="footer-link" href="#fleet">أسطولنا</a></li>
+                        <li><a class="footer-link" href="#offers">العروض</a></li>
+                        <li><a class="footer-link" href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">الدعم</h4>
+                    <ul class="footer-links">
+                        <li><a class="footer-link" href="#">مركز المساعدة</a></li>
+                        <li><a class="footer-link" href="#">الشروط والأحكام</a></li>
+                        <li><a class="footer-link" href="#">معلومات التأمين</a></li>
+                        <li><a class="footer-link" href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">التواصل</h4>
+                    <ul class="footer-contact">
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">location_on</span>
+                            حائل، المملكة العربية السعودية
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">call</span>
+                            +966 50 123 4567
+                        </li>
+                        <li class="contact-item">
+                            <span class="material-symbols-outlined contact-icon">mail</span>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553c3b333a1524342c393421343f347b2634">[email&#160;protected]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 قيلات أجا. جميع الحقوق محفوظة.</p>
+                <div class="footer-settings">
+                    <span class="footer-setting">العربية</span>
+                    <span class="footer-setting">ر.س</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+    <script src="packages.js"></script>
+</body>
+
+</html>
